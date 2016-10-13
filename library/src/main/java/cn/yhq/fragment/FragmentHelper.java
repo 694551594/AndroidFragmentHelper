@@ -97,13 +97,13 @@ public final class FragmentHelper {
         return new FragmentHelper(fragment.getContext(), fragment.getChildFragmentManager(), containerId);
     }
 
-    void saveInstanceState(Bundle bundle) {
+    public void saveInstanceState(Bundle bundle) {
         if (this.mLastTab != null) {
             bundle.putString("curTab", this.mLastTab.tag);
         }
     }
 
-    void restoreInstanceState(Bundle bundle) {
+    public void restoreInstanceState(Bundle bundle) {
         String curTab = bundle.getString("curTab");
         if (TextUtils.isEmpty(curTab)) {
             return;
