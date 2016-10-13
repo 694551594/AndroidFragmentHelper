@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         fragmentHelper.addFragment(Fragment1.class);
         fragmentHelper.addFragment(Fragment2.class);
 
-        fragmentHelper.changeFragment(Fragment1.class);
+        fragmentHelper.changeFragment(0);
 
         RadioGroup radioGroup = (RadioGroup) this.findViewById(R.id.radio_group);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {

@@ -144,6 +144,11 @@ public final class FragmentHelper {
         return null;
     }
 
+    public void changeFragment(int position) {
+        Class<? extends Fragment> fragmentClass = this.mTabs.get(position).getClss();
+        this.changeFragment(fragmentClass);
+    }
+
     public void changeFragment(String tag) {
         FragmentTransaction ft = doChanged(tag, null);
         if (ft != null) ft.commit();
