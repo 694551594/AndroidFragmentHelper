@@ -3,7 +3,7 @@
 Fragment切换帮助类
 
 ##gradle配置方式
-`compile 'cn.yhq:android-fragment-helper:1.1.0'`
+`compile 'cn.yhq:android-fragment-helper:1.2.0'`
 
 ##使用方式
 ###1、初始化
